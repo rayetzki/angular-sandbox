@@ -1,0 +1,10 @@
+<section class="timer">
+  <h2 class="timer__title">Таймер</h2>
+  <time class="timer__value">{{ count | date: 'mm:ss' }}</time>
+  <div class="timer__actions">
+    <button class="timer__action" *ngIf="status === 'RESET'" (click)='start()'>Включить</button>
+    <button class="timer__action" *ngIf="status === 'PAUSED'" (click)='start()'>Продолжить</button>
+    <button class="timer__action" *ngIf="status === 'ON'" (click)='pause()'>Пауза</button>
+    <button class="timer__action" *ngIf="status === 'ON'" (click)='reset()'>Стоп</button>
+  </div>
+</section>

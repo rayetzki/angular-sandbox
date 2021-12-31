@@ -1,0 +1,24 @@
+<section class="todo">
+  <h2 class="todo-title">{{ title }}</h2>
+  <div class="todo-search">
+    <search (search)="searchTodos($event)"></search>
+  </div>
+  <ol class="todo-list">
+    <ng-container *ngFor="let todo of todos">
+      <li class="todo-list-item" *ngIf="showTodo(todo) === true">
+        <label [appHighlight]="highlightColor" class="todo-list-item__label" [class.crossed]="todo.done">
+          <input
+            class="todo-list-item__toggler"
+            type="checkbox"
+            (change)="toggleTodo(todo.id)"
+            [checked]="todo.done"
+          />
+          {{ todo.description }}
+        </label>
+      </li>
+    </ng-container>
+  </ol>
+  <filter (filterTodos)="filterTodos($event)" [activeFilter]="activeFilter"></filter>
+</section>
+
+<timer></timer>

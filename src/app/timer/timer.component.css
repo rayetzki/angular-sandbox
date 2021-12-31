@@ -1,0 +1,29 @@
+.timer {
+  padding: 1em;
+}
+
+.timer__title {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.timer__value {
+  display: inline;
+  font-size: 5em;
+  letter-spacing: .2ch;
+}
+
+.timer__actions {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 150px;
+}
+
+.timer__action {
+  background: none;
+  border: 1px dashed rebeccapurple;
+  font-size: large;
+  color: palevioletred;
+}

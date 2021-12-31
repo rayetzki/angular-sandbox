@@ -1,0 +1,5 @@
+<ul class="filter" role="tablist">
+  <li class="filter__item" tabindex="0" role="tab" (click)="changeFilter('All')" [attr.aria-current]="activeFilter === 'All'">Все</li>
+  <li class="filter__item" tabindex="0" role="tab" (click)="changeFilter('Done')" [attr.aria-current]="activeFilter === 'Done'">Сделаннные</li>
+  <li class="filter__item" tabindex="0" role="tab" (click)="changeFilter('Undone')" [attr.aria-current]="activeFilter === 'Undone'">Несделанные</li>
+</ul>

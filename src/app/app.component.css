@@ -1,0 +1,39 @@
+.todo {
+  padding: 1em;
+}
+
+.todo-title {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.todo-search {
+  margin: .5em 0;
+}
+
+.todo-list {
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list-item {
+  display: flex;
+}
+
+.todo-list-item__label {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list-item__label.crossed {
+  text-decoration: line-through;
+}
+
+.todo-list-item__toggler {
+  accent-color: black;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 2ch;
+}

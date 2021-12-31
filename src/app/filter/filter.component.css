@@ -1,0 +1,27 @@
+.filter {
+  display: flex;
+  list-style-type: none;
+  margin: 1em 0;
+  width: fit-content;
+  padding: 0;
+}
+
+.filter__item {
+  margin: 0 .5em;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: wheat;
+  cursor: pointer;
+}
+
+.filter__item[aria-current='true'] {
+  color: tomato;
+}
+
+.filter__item[aria-current='true']:hover {
+  color: whitesmoke;
+}
+
+.filter__item[aria-current='false']:hover {
+  color: tomato;
+}

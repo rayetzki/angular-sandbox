@@ -1,0 +1,12 @@
+.search {
+  border: 1px solid antiquewhite;
+  accent-color: aliceblue;
+  padding: .5em;
+  min-width: 20rem;
+}
+
+.search::placeholder {
+  font-size: 1.2em;
+  letter-spacing: .25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
