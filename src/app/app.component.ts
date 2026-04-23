@@ -1,10 +1,16 @@
 import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { StorageService } from './storage.service';
+import { FilterComponent } from './filter/filter.component';
+import { SearchComponent } from './search/search.component';
+import { HighlightDirective } from './highlight.directive';
 import type { Todo, ActiveFilter } from './app.types';
 import type { OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [CommonModule, FilterComponent, SearchComponent, HighlightDirective],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,

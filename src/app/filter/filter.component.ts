@@ -1,8 +1,11 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import type { ActiveFilter } from '../app.types';
 
 @Component({
   selector: 'filter',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './filter.component.html',
   styleUrls: ['./filter.component.css']
 })

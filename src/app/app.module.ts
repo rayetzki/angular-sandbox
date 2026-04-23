@@ -6,7 +6,6 @@ import { FilterComponent } from './filter/filter.component';
 import { SearchComponent } from './search/search.component';
 import { HighlightDirective } from './highlight.directive';
 import { StorageService } from './storage.service';
-import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { TimerComponent } from './timer/timer.component';
     FilterComponent,
     SearchComponent,
     HighlightDirective,
-    TimerComponent,
   ],
   imports: [
     BrowserModule,
