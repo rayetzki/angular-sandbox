@@ -18,14 +18,14 @@ import type { OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   constructor(@Inject(StorageService) private readonly storageService: StorageService) {}
 
-  readonly title = 'Задачи';
+  readonly title = 'Tasks';
   readonly highlightColor = 'yellow';
   readonly storageKey = 'todos';
   readonly defaultTodos = [
-    { id: 1, description: 'Завтрак', done: true },
-    { id: 2, description: 'Уборка', done: false },
-    { id: 3, description: 'Купить носки', done: false },
-    { id: 4, description: 'Почитать', done: false },
+    { id: 1, description: 'Breakfast', done: true },
+    { id: 2, description: 'Cleanup', done: false },
+    { id: 3, description: 'Buy socks', done: false },
+    { id: 4, description: 'Read', done: false },
   ];
 
   todos: Todo[] = [];
